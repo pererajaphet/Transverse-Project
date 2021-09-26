@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta charset="UTF-8" />
+     <meta name="author" content="Manuel" />
+	<title> Blog</title>
+	<link rel="shortcut icon" type="image/x-icon" href="Projet transverse/Logo.png" />
+	<link href="menu.css" rel="stylesheet" />
+	<!DOCTYPE html">
+ </head>
+<nav>
+				<ul>
+					<li><a href="file:///Users/japhetditsougaperera/Documents/page%20web%206.html">Accueil</a></li>
+					<li><a href="file:///Users/japhetditsougaperera/Documents/Catalogue2_fichiers/Catalogue2.html">Base de données</a></li>
+					<li><a href="file:///Users/japhetditsougaperera/Documents/ProjettransverseContact.html">Contact</a></li>
+					<li><a href="file:///Users/japhetditsougaperera/Documents/testform.html">Blog</a></li>
+					<li><a href="rendu physique.docx">Programmes</a></li>
+				</ul>
+			</nav>
+ <style type="text/css"> 
+ 
+   body
+{
+	margin: 10px 0 ;
+	padding: 0 ;
+	text-align: center ;
+	font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+	background-image:url("https://cdn.pixabay.com/photo/2016/09/01/19/13/confetti-1637197_960_720.jpg");
+}
+  div
+  {
+	  width: 770px ;
+	  margin: 0 auto ;
+	  text-align: left ;
+	  border: 5px solid rgb(0, 0, 0) ;
+	  background: rgb(236, 234, 234) ;
+  }
+  h1
+  {
+	  height: 40px;
+	  background-color: rgb(253, 253, 253);
+  }
+  h2
+  {
+	  height: 40px;
+	  background-color: rgb(132, 200, 255);
+  }
+  div
+  {
+	  padding: 0 30px 0 100px ;
+	  background: rgb(252, 252, 252);
+  }
+  div
+  {
+	  padding-left: 25px ;
+	  line-height: 25px ;
+	  font-size: 1.1em ;
+	  color: rgb(0, 0, 0) ;
+	  border-bottom: 5px solid rgb(0, 0, 0) ;
+	  text-align: justify;
+  }
+  p {
+   animation-duration: 3s;
+   animation-name: slidein;
+	}
+
+  @keyframes slidein {
+   from {
+    margin-left: 100%;
+    width: 300%;
+   }
+
+   to {
+    margin-left: 0%;
+    width: 100%;
+   }
+  }
+  75% {
+   font-size: 300%;
+   margin-left: 25%;
+   width: 150%;
+  }
+  pre
+  {
+	overflow: auto ;
+  }
+  <style type="text/css">
+  html pre
+  {
+	width: 636px ;
+  }
+  </style>
+  </style>
+	  </style>
+	</head>
+	<style> 
+	#menu a {   
+    	display:block;   
+    	color: rgb(0, 0, 0);   
+    	text-decoration: align-self: start;;  
+	}  
+#menu > li,  
+#menu > li li {  
+    position: relative;  
+    display:inline-block;  
+    width: 110px;  
+    padding: 6px 15px;  
+    background-color: rgb(132, 200, 255);  
+    background-image: linear-gradient( rgb(132, 200, 255), rgb(113, 169, 214),  rgb(64, 126, 177), rgb(6, 135, 241));  
+}  
+#menu > li li { background: transparent none; }  
+#menu > li li a { color: rgb(231, 39, 39); }  
+#menu > li li:hover { background:rgb(170, 20, 20); }  
+#menu > li:first-child {  
+    border-right: 1px solid rgb(92, 4, 4);  
+    border-radius: 8px 0 0 8px;  
+}  
+#menu > li + li {  
+    border-left: 1px solid #aaa;  
+    border-right: 1px solid #777;  
+}  
+#menu > li:last-child {  
+    border-right:0;  
+    border-left: 1px solid #aaa;  
+    border-radius: 0 8px 8px 0 ;  
+}  
+#menu > li:hover {  
+    background-color: #999;  
+    background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);  
+}  
+#menu ul {  
+    position: absolute;  
+    top: 2em; left:0;  
+    max-height:0em;   
+    margin:0; padding:0;  
+    background-color:#ddd;  
+    background-image: linear-gradient(#fff,#ddd);  
+    overflow:hidden;  
+    transition: 1s max-height 0.3s;  
+    border-radius: 0 0 8px 8px;  
+}  
+ 
+#menu > li:hover ul {  
+    max-height:13em;  
+}  
+#footer 
+{ 
+color: #132eaa; 
+text-align: center; 
+font-family: Calibri, Times New Roman, Bookman Old Style, sans-serif; 
+padding-top: 2px; 
+padding-bottom: 2px; 
+height: 20px; 
+} 
+div#contenu
+{
+	padding: 0 25px 0 100px ;
+	background: url(bg_page.gif) no-repeat 15px 15px ;
+}
+
+
+
+div#contenu h3
+{
+	margin-left: 15px ;
+	padding-left: 5px ;
+	border-bottom: 1px solid #9b2 ;
+	border-left: 3px solid #9b2 ;
+	color: #9b2 ;
+}
+
+div#contenu p
+{
+	text-align: justify ;
+	text-indent: 2em ;
+	line-height: 1.7em ;
+}
+div#contenu a
+{
+	color: #8a0 ;
+}
+
+div#contenu a:hover
+{
+	color: #9b2 ;
+}
+
+p#footer
+{
+	margin: 0 ;
+	padding-right: 10px ;
+	line-height: 30px ;
+	text-align: right ;
+	color: #8a0 ;
+}
+
+pre
+{
+	overflow: auto ;
+	background: #dea ;
+	border: 2px solid #9b2 ;
+	padding: 5px 0 0 5px ;
+	font-size: 1.2em ;
+}
+
+pre span
+{
+	color: #560 ;
+}
+
+pre span.comment
+{
+	color: #b30000 ;
+}
+ul#menu li a:hover
+{
+	background: url(bg_menu.gif) repeat-x 0 0 ;
+}
+ul#menu li a
+{
+	width: 130px ;
+	line-height: 25px ;
+	font-size: 1.2em ;
+	font-weight: bold ;
+	letter-spacing: 2px ;
+	color: #fff ;
+	display: block ;
+	text-decoration: none ;
+	border-right: 2px solid #dea ;
+}
+ul#menu li
+{
+	float: left ;
+	text-align: center ;
+}
+ul#menu
+{
+	height: 35px ;
+	margin: 0 ;
+	padding: 0 ;
+	background: url(bg_menu.gif) repeat-x 0 -25px ;
+	list-style-type: none ;
+}
+#navigation 
+{ 
+	width: 162px;
+	float:left;
+	background-color:rgb(172, 169, 169);
+}
+#navigation {
+  width: 280px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-width: 5px;
+  float:left;
+  background-color: rgb(132, 200, 255);
+
+}
+#navigation li {
+  background: rgb(0, 0, 0) ;
+  color: #fff ;
+  border: 1px solid #600 ;
+  margin-bottom: 1px ;
+}
+#navigation li a {
+  display: block ;
+  background: rgb(0, 0, 0) ;
+  color: #fff ;
+  font: 1em "Trebuchet MS",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+  padding: 4px 0 ;
+}
+#navigation li a:hover, #navigation li a:focus, #navigation li a:active {
+  background: rgb(0, 0, 0) ;
+  text-decoration: underline ;
+}
+#Presentation
+{ 
+	width: 169px;
+	height:350px;
+	float:right;
+	background-color: #000000;
+}
+p#div {
+	border-radius: 10px 5px 10px 5px;
+}
+
+
+html {
+	scroll-behavior: smooth; 
+}
+ </style>
+ <body>
+</head>
+<hearder>
+	<br>
+	<br>
+ <IMG src="">
+
+ <FONT size="56pt"color="black">Active Blog </FONT>
+<h1 align="center">Life Water project</h1>
+</body>
+</html>
+<div id="navigation">
+		<FONT size="6"><FONT color="white">News </FONT></FONT>
+	<ul>
+		<li><a href="https://www.nasa.gov">Nasa</a></li>
+		<li><a href="https://www.esa.int">Esa</a></li>
+		<li><a href="https://www.science-et-vie.com">Science et vie</a></li>
+		<li><a href="http://astronova.fr">AstroNova</a></li>
+		<li><a href="https://www.afastronomie.fr">Astronomie Infos</a></li>
+		<li><a href="https://www.astrobetter.com/wiki/Rumor+Mill">Astrobetter</a></li>
+		<li><a href="https://skyandtelescope.org">Sky and Telescope</a></li>
+	</ul>
+</div>
+<div id="Presentation">
+	<FONT  color="white">LWP </FONT>
+	<br>
+	<br>
+	<img src="Projet transverse/Logo.png" height="120px" width="180">
+</div>
+  <block class="content">
+	<div class="article">
+	  <p align="center">
+		<IMG src= https://www.nasa.gov/sites/default/files/images/612082main_kepler20f_full.jpg height="350" width="420">
+		  <style>
+			IMG {
+			 overflow:hidden
+			 border-radius: 1em
+			 box-shadow:23px
+		   }
+		   </style>
+	  </p>
+	<h2>Artist's Concept of Kepler-20f</h2>
+	  <p1>NASA's Kepler mission has discovered the first Earth-size planets orbiting a sun-like star outside our solar system. The planets, called Kepler-20e and Kepler-20f, are too close to their star to be in the so-called habitable zone where liquid water could exist on a planet's surface, but they are the smallest exoplanets ever confirmed around a star like our sun.
+  
+		Kepler-20f is the closest object to the Earth in terms of size ever discovered. With an orbital period of 20 days and a surface temperature of 800 degrees Fahrenheit, it is too hot to host life, as we know it.
+		
+		For more information about the Kepler mission and to view the digital press kit, visit: http://www.nasa.gov/kepler
+		
+		Image credit: NASA/Ames/JPL-Caltech</p1>
+		<br> <span>Aug. 7, 2017</span>
+		<br>
+	</div>
+	<form method="post" action="ton_script_recup_data_form.php">
+	  <div>
+		<label for="Name"><strong>NickName</label>
+		  <input type="text" id="name" class="text">
+	  </div>
+	  <div>
+		<p>
+		  Your comment :<br />
+		  <textarea name="commentaire" rows="7" cols="39"></textarea>
+	  </div>
+	  <button type="submit" style="width:170px";><strong>Share</strong></button>
+	</form>
+  </block>
+  <block class="content">
+	<div class="article">
+	  <p align="center">
+		<IMG src= https://www.nasa.gov/sites/default/files/images/612068main_Kepler20e_full_full.jpg height="350" width="420">
+		  <style>
+			IMG {
+			 overflow:hidden
+			 border-radius: 1em
+			 box-shadow:23px
+		   }
+		   </style>
+	  </p>
+	<h2><l>Artist's Concept of Kepler-20e</l></h2>
+	  <p>NASA's Kepler mission has discovered the first Earth-size planets orbiting a sun-like star outside our solar system. The planets, called Kepler-20e and Kepler-20f, are too close to their star to be in the so-called habitable zone where liquid water could exist on a planet's surface, but they are the smallest exoplanets ever confirmed around a star like our sun.
+  
+		Kepler-20e is the first planet smaller than the Earth discovered to orbit a star other than the sun. A year on Kepler-20e only lasts 6 days, as it is much closer to its host star than the Earth is to the sun. The temperature at the surface of the planet, around 1400 degrees Fahrenheit, is much to hot to support life, as we know it.
+		
+		Kepler-20e is likely to be entirely rocky and without an atmosphere. The planet is tidally locked, always showing the same side to its host star, as the moon to the Earth, and could have large temperature differences between its permanent night and day sides.
+		
+		Astronomers think that the planet is likely to be geologically active, due to its own formation process and the strong gravitational interactions with its host star. In this artistic depiction, the planet is represented with active volcanoes on both the night and day sides.Image credit: NASA/Ames/JPL-Caltech</p>
+		<br> <span>Aug. 7, 2017</span>
+		<br>
+	</div>
+	<form method="post" action="ton_script_recup_data_form.php">
+	  <div>
+		<label for="Name"><strong>NickName</label>
+			<input type="text" placeholder="text field" required/>
+	  </div>
+	  <div>
+		<p>
+		  Your comment :<br />
+		  <textarea name="commentaire" rows="7" cols="39"></textarea>
+	  </div>
+	  <button type="submit" style="width:130px";><strong>Share</strong></button>
+	</form>
+  </block>
+  </block>
+  <block class="content">
+	<div class="article">
+	  <p align="center">
+		<IMG src= https://www.nasa.gov/sites/default/files/images/612068main_Kepler20e_full_full.jpg height="350" width="420">
+		  <style>
+			IMG {
+			 overflow:hidden
+			 border-radius: 1em
+			 box-shadow:23px
+		   }
+		   </style>
+	  </p>
+	<h2>Kepler's First Five Exoplanets</h2>
+	
+	  <p>Kepler's first five exoplanets, named Kepler 4b, 5b, 6b, 7b and 8b, were announced a few months after the spacecraft began making science observations. This artist's concept shows a cloudy Jupiter-like planet that orbits very close to its fiery hot star. Known as "hot Jupiters" because of their high masses and extreme temperatures, the new exoplanets range in size from similar to Neptune to larger than Jupiter. They have orbits ranging from 3.3 to 4.9 days. Estimated temperatures of the planets range from 2,200 to 3,000 degrees Fahrenheit, hotter than molten lava and much too hot for life as we know it. All five of the exoplanets orbit stars hotter and larger than Earth's sun. Credit: NASA/JPL-Caltech/T. Pyle (SSC)</p>
+		<br> <span>Nov. 2, 2018</span>
+	</div>
+	<form method="post" action="ton_script_recup_data_form.php">
+	  <div>
+		<label for="Name"><strong>NickName</label>
+		  <input type="text" id="name" class="text">
+	  </div>
+	  <div>
+		<p>
+		  Your comment :<br />
+		  <textarea name="commentaire" rows="7" cols="39"></textarea>
+	  </div>
+	  <button type="submit" style="width:170px";><strong>Share</strong></button>
+	</form>
+  </block>
+  </block>
+  <block class="content">
+	<div class="article">
+	  <p align="center">
+		<IMG src= "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/ssc2019-14c.jpg" height="350" width="420">
+		  <style>
+			IMG {
+			 overflow:hidden
+			 border-radius: 1em
+			 box-shadow:23px
+		   }
+		   </style>
+	  </p>
+	<h2>A Glimpse of a Rocky Exoplanet's Surface</h2>
+	
+	  <p>Discovered in 2018 by NASA's Transiting Exoplanet Satellite Survey (TESS) mission, planet LHS 3844b is located 48.6 light-years from Earth and has a radius 1.3 times that of Earth. It orbits a small, cool type of star called an M dwarf - especially noteworthy because, as the most common and long-lived type of star in the Milky Way galaxy, M dwarfs may host a high percentage of the total number of planets in the galaxy.
+  
+		An August 2019 study using data from NASA's Spitzer Space Telescope provides a rare glimpse of conditions on the surface of a rocky planet orbiting a star beyond the Sun. The study, published in the journal Nature, shows that the planet's surface may resemble those of Earth's Moon or Mercury: The planet likely has little to no atmosphere and could be covered in the same cooled volcanic material found in the dark areas of the Moon's surface, called mare.
+		
+		Image Credit:/JPL-Caltech</p>
+		<br> <span>Oct. 8, 2019</span>
+		<br>
+	</div>
+	<form method="post" action="ton_script_recup_data_form.php">
+	  <div>
+		<label for="Name"><strong>NickName</label>
+		  <input type="text" id="name" class="text">
+	  </div>
+	  <div>
+		<p>
+		  Your comment :<br />
+		  <textarea name="commentaire" rows="7" cols="39"></textarea>
+	  </div>
+	  <button type="submit" style="width:130px";><strong>Share</strong></button>
+	</form>
+  </block>
+  </block>
+  <block class="content">
+	<div class="article">
+	  <p align="center">
+		<IMG src= "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/heic1312a.jpg" height="350" width="420">
+		  <style>
+			IMG {
+			 overflow:hidden
+			 border-radius: 1em
+			 box-shadow:23px
+		   }
+		   </style>
+	  </p>
+	<h2>Rains of Terror on Exoplanet HD 189733b</h2>
+	
+	  <p>This Halloween, take a tour with NASA's Exoplanet Exploration site of some of the most terrifying and mind-blowing destinations in our galaxy. In this image, the nightmare world of HD 189733 b is the killer you never see coming. To the human eye, this far-off planet looks bright blue. But any space traveler confusing it with the friendly skies of Earth would be badly mistaken. The weather on this world is deadly. Its winds blow up to 5,400 mph (2 km/s) at seven times the speed of sound, whipping all would-be travelers in a sickening spiral around the planet. And getting caught in the rain on this planet is more than an inconvenience; it’s death by a thousand cuts. This scorching alien world possibly rains glass—sideways—in its howling winds. The cobalt blue color comes not from the reflection of a tropical ocean, as on Earth, but rather a hazy, blow-torched atmosphere containing high clouds laced with silicate particles. 
+  
+		More: Galaxy of Horrors
+		
+		Image Credit: ESO/M. Kornmesser</p>
+		<br> <span>Oct. 31, 2016</span>
+		<br>
+	</div>
+	<form method="post" action="ton_script_recup_data_form.php">
+	  <div>
+		<label for="Name"><strong>NickName</label>
+		  <input type="text" id="name" class="text">
+	  </div>
+	  <div>
+		<p>
+		  Your comment :<br />
+		  <textarea name="commentaire" rows="7" cols="39"></textarea>
+	  </div>
+	  <button type="submit" style="width:170px";><strong>Share</strong></button>
+	</form>
+  </block>
+  </block>
+  <block class="content">
+	<div class="article">
+	  <p align="center">
+		<IMG src= "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/hires-kepler-421b_0.jpg" height="350" width="420">
+		  <style>
+			IMG {
+			 overflow:hidden
+			 border-radius: 1em
+			 box-shadow:23px
+		   }
+		   </style>
+	  </p>
+	<h2>Kepler-421b: Transiting Exoplanet with Longest Known Year</h2>
+	
+	  <p>This artist's conception shows Kepler-421b, a Uranus-sized transiting exoplanet with the longest known year, circling its star once every 704 days. Kepler-421b orbits an orange, K-type star that is cooler and dimmer than our sun and is located about 1,000 light-years from Earth in the constellation Lyra. 
+		See the feature story for more details.
+		Image Credit: 
+		Harvard-Smithsonian, Center for Astrophysics/D. A. Aguilar
+		</p>
+		<br> <span>July 22, 2014</span>
+		<br>
+	</div>
+	<form method="post" action="ton_script_recup_data_form.php">
+	  <div>
+		<label for="Name"><strong>NickName</label>
+		  <input type="text" id="name" class="text">
+	  </div>
+	  <div>
+		<p>
+		  Your comment :<br />
+		  <textarea name="commentaire" rows="7" cols="39"></textarea>
+	  </div>
+	  <button type="submit" style="width:170px";><strong>Share</strong></button>
+	</form>
+  </block>
+  </block>
+  <block class="content">
+	<div class="article">
+	  <p align="center">
+		<IMG src= "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia23689.jpg" height="350" width="420">
+		  <style>
+			IMG {
+			 overflow:hidden
+			 border-radius: 1em
+			 box-shadow:23px
+		   }
+		   </style>
+	  </p>
+	<h2>magining Another Earth</h2>
+	
+	  <p>This artist's concept shows exoplanet Kepler-1649c orbiting around its host red dwarf star. This exoplanet is in its star's habitable zone (the distance where liquid water could exist on the planet's surface) and is the closest to Earth in size and temperature found yet in Kepler's data.
+  
+		For more information on the Kepler mission, visit www.nasa.gov/Kepler.
+		
+		For more information about exoplanets, visit https://exoplanets.nasa.gov/.
+		
+		Image Credit: NASA/Ames Research Center/Daniel Rutter</p>
+		<br> <span>May 28, 2020</span>
+		<br>
+	</div>
+	<form method="post" action="ton_script_recup_data_form.php">
+	  <div>
+		<label for="Name"><strong>NickName</label>
+		  <input type="text" id="name" class="text">
+	  </div>
+	  <div>
+		<p>
+		  Your comment :<br />
+		  <textarea name="commentaire" rows="7" cols="39"></textarea>
+	  </div>
+	  <button type="submit" style="width:170px";><strong>Share</strong></button>
+	</form>
+  </block>
+  </block>
+  <block class="content">
+	<div class="article">
+	  <p align="center">
+		<IMG src= "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia23408.jpg" height="350" width="420">
+		  <style>
+			IMG {
+			 overflow:hidden
+			 border-radius: 1em
+			 box-shadow:23px
+		   }
+		   </style>
+	  </p>
+	<h2>TESS Finds First Earth-Size Planet in the Habitable Zone</h2>
+	
+	  <p>About 100 light-years away, in our own Milky Way galaxy, in the constellation Dorado, sits a planetary system named TOI 700. It is home to TOI 700 d (illustrated here), the first Earth-size habitable-zone planet discovered by TESS, NASA's Transiting Exoplanet Survey Satellite.
+  
+		Image Credit: NASA/Goddard Space Flight Center</p>
+		<br> <span>Jan. 7, 2020</span>
+		<br>
+	</div>
+	<form method="post" action="ton_script_recup_data_form.php">
+	  <div>
+		<label for="Name"><strong>NickName</label>
+		  <input type="text" id="name" class="text">
+	  </div>
+	  <div>
+		<p>
+		  Your comment :<br />
+		  <textarea name="commentaire" rows="7" cols="39"></textarea>
+	  </div>
+	  <button type="submit" style="width:170px";><strong>Share</strong></button>
+	</form>
+  </block>
+  </block>
+  <block class="content">
+	<div class="article">
+	  <p align="center">
+		<IMG src= "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia23689.jpg" height="350" width="420">
+		  <style>
+			IMG {
+			 overflow:hidden
+			 border-radius: 1em
+			 box-shadow:23px
+		   }
+		   </style>
+	  </p>
+	<h2>magining Another Earth</h2>
+	
+	  <p>This artist's concept shows exoplanet Kepler-1649c orbiting around its host red dwarf star. This exoplanet is in its star's habitable zone (the distance where liquid water could exist on the planet's surface) and is the closest to Earth in size and temperature found yet in Kepler's data.
+  
+		For more information on the Kepler mission, visit www.nasa.gov/Kepler.
+		
+		For more information about exoplanets, visit https://exoplanets.nasa.gov/.
+		
+		Image Credit: NASA/Ames Research Center/Daniel Rutter</p>
+		<br> <span>May 28, 2020</span>
+	</div>
+	<form method="post" action="ton_script_recup_data_form.php">
+	  <div>
+		<label for="Name"><strong>NickName</label>
+		  <input type="text" id="name" class="text">
+	  </div>
+	  <div>
+		<p>
+		  Your comment :<br />
+		  <textarea name="commentaire" rows="7" cols="39"></textarea>
+	  </div>
+	  <button type="submit" style="width:170px";><strong>Share</strong></button>
+	</form>
+  </block>
+  </block>
+  <block class="content">
+	<div class="article">
+	  <p align="center">
+		<IMG src= "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia20068-55_cnc_e_illustration-main.jpg" height="350" width="420">
+		  <style>
+			IMG {
+			 overflow:hidden
+			 border-radius: 1em
+			 box-shadow:23px
+		   }
+		   </style>
+	  </p>
+	<h2>Hot-Lava World Illustration</h2>
+	
+	  <p>This illustration shows one possible scenario for the hot, rocky exoplanet called 55 Cancri e, which is nearly two times as wide as Earth. New data from NASA's Spitzer Space Telescope show that the planet has extreme temperature swings from one side to the other – and a possible reason for this might be the presence of lava pools.
+  
+		This planet is tidally locked to its star, just as our moon is to Earth, which means that one side always sizzles under the heat of its star while the other side remains in the dark. If the planet were covered in lava, then the hot, sun-facing side of the planet would have liquid lava flows, while the colder, dark side would see solidified lava rock. The hardened lava would be unable to transport heat across the planet, explaining why Spitzer detected that the cold side of the planet is much colder than the hot side.
+		
+		Such a lava planet, if it exists, would have dust streaming off of it, as illustrated here. Radiation and winds from the nearby star would blow off the material.
+		
+		Scientists say that future observations with NASA's upcoming James Webb Space Telescope should provide more details about the nature of this exotic world.
+		
+		Image credit: NASA/JPL-Caltech</p>
+		<br> <span>March 30, 2016</span>
+		<br>
+	</div>
+	<form method="post" action="ton_script_recup_data_form.php">
+	  <div>
+		<label for="Name"><strong>NickName</label>
+		  <input type="text" id="name" class="text">
+	  </div>
+	  <div>
+		<p>
+		  Your comment :<br />
+		  <textarea name="commentaire" rows="7" cols="39"></textarea>
+	  </div>
+	  <button type="submit" style="width:170px";><strong>Share</strong></button>
+	</form>
+  </block>
+  </block>
+  <block class="content">
+	<div class="article">
+	  <p align="center">
+		<IMG src= "https://www.nasa.gov/sites/default/files/thumbnails/image/pia20687_main.jpg" height="350" width="420">
+		  <style>
+			IMG {
+			 overflow:hidden
+			 border-radius: 1em
+			 box-shadow:23px
+		   }
+		   </style>
+	  </p>
+	<h2>magining Another Earth</h2>
+	
+	  <p>Hot Jupiters, exoplanets around the same size as Jupiter that orbit very closely to their stars, often have cloud or haze layers in their atmospheres. This may prevent space telescopes from detecting atmospheric water that lies beneath the clouds, according to a study in the Astrophysical Journal.
+  
+		As much as half of the water in the atmospheres of these exoplanets may be blocked by these clouds or hazes, research suggests. The study, led by researchers at NASA's Jet Propulsion Laboratory, Pasadena, California, examined hot Jupiters that had been observed with the Hubble Space Telescope.
+		
+		An unlabeled version of this graphic, showing a planet by itself, is also available here.
+		
+		The Hubble Space Telescope is a project of international cooperation between NASA and ESA (European Space Agency). NASA's Goddard Space Flight Center in Greenbelt, Maryland, manages the telescope. The Space Telescope Science Institute (STScI) in Baltimore, Maryland, conducts Hubble science operations. STScI is operated for NASA by the Association of Universities for Research in Astronomy in Washington.
+		
+		Image credit: NASA/JPL-Caltech</p>
+		<br> <span>June 8, 2016</span>
+	</div>
+	<form method="post" action="ton_script_recup_data_form.php">
+	  <div>
+		<label for="Name"><strong>NickName</label>
+		  <input type="text" id="name" class="text">
+	  </div>
+	  <div>
+		<p>
+		  Your comment :<br />
+		  <textarea name="commentaire" rows="7" cols="39"></textarea>
+	  </div>
+	  <button type="submit" style="width:170px";><strong>Share</strong></button>
+	</form>
+  </block>
+  </block>
+  <block class="content">
+	<div class="article">
+	  <p align="center">
+		<IMG src= "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/wasp-18.jpg" height="200" width="270">
+		  <style>
+			IMG {
+			 overflow:hidden
+			 border-radius: 1em
+			 box-shadow:23px
+		   }
+		   </style>
+	  </p>
+	<h2>WASP-18b: A 'Hot Jupiter'</h2>
+	
+	  <p>A new study using data from NASA’s Chandra X-ray Observatory has shown that a planet is making the star that it orbits act much older than it actually is, as explained in our latest press release. The artist’s illustration featured in the main part of this graphic depicts the star, WASP-18, and its planet, WASP-18b.
+   
+		WASP-18b is a “hot Jupiter,” a giant exoplanet that orbits very close to its star, located about 330 light years from Earth. Specifically, the mass of WASP-18b is estimated to be about ten times that of Jupiter, yet it orbits its star about once every 23 hours. By comparison, it takes Jupiter about 12 years to complete one trip around the sun from its great distance.
+		 
+		The new Chandra data of the WASP-18 system show that this huge planet is so close to its star that it may be causing a dampening of the star’s magnetic field. As stars age, their X-ray and magnetic activity decreases. Astronomers determined that WASP-18 is only between 500 million and 2 billion years old, a relatively young age for a star. Given this age, astronomers expect that WASP-18 would be giving off copious amounts of X-rays.
+		 
+		Surprisingly, the long Chandra observations reveal no X-rays being emitted from WASP-18, as seen in the lower inset box. The same field-of-view in the upper inset box shows that in optical light WASP-18 is a bright source. Using established relations between the magnetic activity and X-ray emission of stars and their age, the researchers concluded that WASP-18 is about 100 times less active than it should be at its age.
+		 
+		The low amount of magnetic activity from WASP-18 is shown in the artist’s illustration by the lack of sunspots and strong flares on the surface of the star. The weak X-ray emission from the star has relatively little effect on the outer atmosphere of the nearby planet, giving it a symmetrical appearance. By contrast, much stronger X-rays from the star CoRoT-2a are eroding the atmosphere of its nearby planet, producing a tail-like appearance.
+		 
+		Tidal forces from the gravitational pull of the massive planet – similar to those the moon has on Earth’s tides but on a much larger scale – may be responsible for disrupting the magnetic field of the star. The strength of the magnetic field in a star depends on the amount of convection, the process by which hot gas moves around the stellar interior. The planet’s gravity may cause motions of gas inside the star that weaken the convection. Because WASP-18 has a narrower convection zone than most stars, it is more vulnerable to the impact of tidal forces that tug at it.
+		 
+		The effect of tidal forces from the planet may also explain an unusually high amount of lithium found in earlier, optical studies of WASP-18. Lithium is usually abundant in younger stars, but over time convection carries lithium to the hot inner regions of a star, where it is destroyed by nuclear reactions. If there is less convection, the lithium does not circulate into the interior of the star as much, allowing more of it to survive. 
+		 
+		These results were published in the July 2014 issue of Astronomy and Astrophysics and are available online. The first author is Ignazio Pillitteri of the Istituto Nazionale di Astrofisica (INAF)-Osservatorio Astronomico di Palermo in Italy. The co-authors are Scott Wolk of the Harvard-Smithsonian Center for Astrophysics in Cambridge, Massachusetts; Salvatore Sciortino also from INAF-Osservatorio Astronomico di Palermo in Italy and Victoria Antoci from Aarhus University in Denmark.
+		
+		NASA's Marshall Space Flight Center in Huntsville, Alabama, manages the Chandra program for NASA's Science Mission Directorate in Washington. The Smithsonian Astrophysical Observatory in Cambridge, Massachusetts, controls Chandra's science and flight operations.
+		
+		Image credit: X-ray: NASA/CXC/SAO/I.Pillitteri et al; Optical: DSS</p>
+		<br> <span>Sept. 16, 2014</span>
+		<br>
+	</div>
+	<form method="post" action="ton_script_recup_data_form.php">
+	  <div>
+		<label for="Name"><strong>NickName</label>
+		  <input type="text" id="name" class="text">
+	  </div>
+	  <div>
+		<p>
+		  Your comment :<br/>
+		  <textarea name="commentaire" rows="7" cols="39"></textarea>
+	  </div>
+	  <button type="submit" style="width:170px";><strong>Share</strong></button>
+	</form>
+  </block>
+  <br>
+  <br>
+  <br>
+
+ <div id="footer"> 
+	Created by <a href="contact.html">Contact</a>.</div> 
+	<br>
+	<a href="#" class="btn btn-default">Ride Up ↑</a>
+  </div> 
+
+  
